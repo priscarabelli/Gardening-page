@@ -1,3 +1,6 @@
+body{
+    background-color: #DCEFE2;
+}
 h1 {
     font-family: 'Kaushan Script', cursive;
     text-align: center;
@@ -11,48 +14,60 @@ h2{
     margin: 0 20px;
 }
 
-footer {
-    text-align: center;
+
+.text-grid h2{
+    color:#004E44;
+    text-shadow: 1px 1px 2px black;
+}
+.text-grid p{
+    font-size: 18px;
     font-family: monospace;
-    background-image: linear-gradient(rgba(224, 17, 95, 0.2) , rgba(0, 0, 0, 0.1)) , url(../images/footer-bg.jpg);
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px 0;
-    text-shadow: 1px 1px 2px white;
+    text-align: center;
+    padding: 10px;
 }
-footer h3{
-    font-weight: 700px;
-    font-size: 20px ;
-    line-height: 30px;
+.text-grid button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    background-color:#004E44;
+    border-radius: 6px;
+    transition: all 200ms ease-in-out;
+    border-color: #004E44;  
+    box-shadow: 2px 2px 5px gray; 
 }
-footer p{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    opacity: 0.9;
+.text-grid button:hover{
+    color:#004E44;
+    background-color: white;
+    
 }
-footer ul{
-    padding: 0;
-    margin: 0;
+.text-grid a{
+    text-decoration: none;
+    color: white;
+      
 }
-footer li{
-    list-style: none; 
-    line-height: 24px;
-    padding: 0;  
-}
-footer a{
-    color: black;
-    font-size: 16px;
+.text-grid a:hover {
+color: #004E44;
 }
 
+main img {
+max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+
+}
 .container-header {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    margin-bottom: 100px;
+    color: #004E44;
+    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -68,17 +83,67 @@ footer a{
     min-width: 100%;
     min-height: 100%;
 }
-
 .headings {
     text-align: center;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px white;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.2);}
-.container-footer{
-    max-width: 100%;
+    }
+
+.grid {
     display: grid;
+    grid-gap: 20px;
+}
+.grid-main-3-columns{
+    grid-template-columns: repeat(3 , 1fr); 
+}
+
+.container-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-grid-3-columns{
     grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 10px; 
+}
+
+footer {
+    text-align: center;
+    font-family: monospace;
+    background-image: url(../images/footer-bg.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    text-shadow: 1px 1px 2px white;
+}
+
+footer h3 {
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.9;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    line-height: 24px;
+    padding: 0;
+}
+
+footer a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 @media (max-width: 960px) {
@@ -89,9 +154,23 @@ h1{
     font-size: 50px ;
 }
  h2{
-    font-size: 20px;
+    font-size: 30px;
 }
-.container-footer{
+.footer-grid-3-columns{
     grid-template-columns: 1fr;
 }
+.grid-main-3-columns{
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+.main-picture-1{
+    display: none;
+}
+.container-grid{
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+
+
 }
