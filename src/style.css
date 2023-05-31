@@ -6,59 +6,30 @@ h1 {
     text-align: center;
     font-size: 100px;
     margin: 0 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 h2{
     text-align: center;
     font-family: monospace;
     font-size: 50px;
     margin: 0 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
-
 .text-grid h2{
-    color:#004E44;
-    text-shadow: 1px 1px 2px black;
+    color:#004E44;  
 }
 .text-grid p{
     font-size: 18px;
     font-family: monospace;
     text-align: center;
-    padding: 10px;
-}
-.text-grid button{
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 20px;
-    font-family: monospace;
-    color: white;
-    background-color:#004E44;
-    border-radius: 6px;
-    transition: all 200ms ease-in-out;
-    border-color: #004E44;  
-    box-shadow: 2px 2px 5px gray; 
-}
-.text-grid button:hover{
-    color:#004E44;
-    background-color: white;
-    
-}
-.text-grid a{
-    text-decoration: none;
-    color: white;
-      
-}
-.text-grid a:hover {
-color: #004E44;
 }
 
 main img {
 max-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
 border-radius: 10px;
-
 
 }
 .container-header {
@@ -100,6 +71,62 @@ border-radius: 10px;
 .container-grid{
     grid-template-columns: repeat(4, 1fr);
 }
+section.secondary h2,
+h3 {
+    text-align: center;
+}
+.grid-container-cards{
+    grid-template-columns: repeat(3, 1fr);
+}
+.card-pic{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 100%;
+    
+}
+.card , .text-grid{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.secondary h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+    text-shadow: 1px 1px 2px white;
+    color: #004E44;
+    padding: 20px;
+}
+.secondary h3{
+    font-family: monospace;
+    font-size: 30px;
+    color: #004E44;
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #004E44;
+    text-decoration: none;
+}
+.btn:hover{
+color: #004E44;
+    background-color: white;
+   
+}
+    
 
 .footer-grid-3-columns{
     grid-template-columns: 1fr 2fr 2fr;
@@ -113,6 +140,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 0;
+    margin-top: 20px;
     text-shadow: 1px 1px 2px white;
 }
 
@@ -170,7 +198,11 @@ h1{
     grid-template-columns: 1fr;
     padding: 20px;
 }
-
-
+.secondary h2{
+    font-size: 50px;
+}
+.grid-container-cards{
+    grid-template-columns: 1fr;
+}
 
 }
