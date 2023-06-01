@@ -94,15 +94,18 @@ h3 {
     font-size: 18px;
     border-radius: 10px;
 }
+.card-footer{
+    margin: 20px;
+}
 
-.secondary h2{
+.secondary h2,  .third h2{
     font-family: 'Kaushan Script', cursive;
     font-size: 70px;
     text-shadow: 1px 1px 2px white;
     color: #004E44;
     padding: 20px;
 }
-.secondary h3{
+.secondary h3, .third h3{
     font-family: monospace;
     font-size: 30px;
     color: #004E44;
@@ -198,8 +201,11 @@ h1{
     grid-template-columns: 1fr;
     padding: 20px;
 }
-.secondary h2{
+.secondary h2 , .third h2{
     font-size: 50px;
+}
+.secondary h3, .third h3{
+    font-size: 20px;
 }
 .grid-container-cards{
     grid-template-columns: 1fr;
