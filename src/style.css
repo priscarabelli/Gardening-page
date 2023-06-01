@@ -70,7 +70,7 @@ border-radius: 10px;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-    max-width: 100%;
+    width: 100%;
     
 }
 .card , .text-grid{
@@ -169,13 +169,10 @@ h1{
  .h2-top-page{
     font-size: 30px;
 }
-.footer-grid-3-columns , .grid-main-3-columns , .container-grid, .grid-container-cards{
+.footer-grid-3-columns , .container-grid, .grid-container-cards, .grid-main-3-columns{
     grid-template-columns: 1fr;
 }
 .main-picture-1{
-    display: none;
-}
-.grid-main-3-columns{
     display: none;
 }
 .secondary h2 , .third h2, .fourth h2{
